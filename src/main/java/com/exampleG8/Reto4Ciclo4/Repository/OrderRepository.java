@@ -59,7 +59,7 @@ public class OrderRepository {
         try {
             return orderInterface.findByRegisterDayAndSalesManId(new SimpleDateFormat("yyyy-MM-dd").parse(registerDay), id);
         } catch (ParseException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
             return null;
         }
     }

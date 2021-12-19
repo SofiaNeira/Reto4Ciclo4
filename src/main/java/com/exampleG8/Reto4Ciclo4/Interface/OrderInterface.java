@@ -19,4 +19,5 @@ public interface OrderInterface extends MongoRepository<Order, Integer> {
     List<Order> findBySalesManId(Integer id);
     List<Order> findBySalesManIdAndStatus(Integer id, String status);
     List<Order> findByRegisterDayAndSalesManId(Date registerDay, Integer id);
+    List<Order> findSalesManById(int id);
 }
